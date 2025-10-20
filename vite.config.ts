@@ -9,6 +9,11 @@ export default defineConfig(({ mode }) => {
         port: 8090,
         host: '0.0.0.0',
       },
+      preview: {
+        host: '0.0.0.0',
+        port: process.env.PORT ? parseInt(process.env.PORT) : 4173,
+        allowedHosts: ['wow-dashboard-production.up.railway.app', 'localhost', '0.0.0.0']
+      },
       plugins: [react()],
       define: {
         'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
