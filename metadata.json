@@ -1,0 +1,5 @@
+{
+  "name": "Brand Audit Dashboard",
+  "description": "A dashboard to present findings from a social and platform audit, designed according to the provided brand guidelines. It features metrics, charts, and an AI-powered summary generator using the Gemini API.",
+  "requestFramePermissions": []
+}
